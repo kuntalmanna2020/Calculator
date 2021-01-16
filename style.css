@@ -1,0 +1,128 @@
+body
+{
+   padding: 0;
+   margin: 0;
+   background: linear-gradient(to right,#032055,#900030,#896030);
+}
+  #calculator
+  {
+      box-shadow: grey;
+  }
+
+#container
+{
+background-color: #EEE8AA;
+height: 490px;
+width: 300px;
+border-radius: 8px;
+position: relative;
+top: 100px;
+left: 40%;
+}
+.screen
+{
+background-color: #ffffffff;
+height: 70px;
+width: 260px;
+
+position: relative;
+top: 20px;
+left: 15px;
+}
+.screen input
+{
+background-color: lightblue;
+height: 65px;
+width: 260px;
+border-radius: 8px;
+position: relative;
+top: -2px;
+color: black;
+left: -2px;
+text-align: right;
+font-size: 25px;
+/*border: solid;*/
+}
+.btns
+{
+position: relative;
+top: 20px;
+left: 15px;
+
+}
+.button
+{
+background-color: lightgrey;
+height: 35px;
+width: 40px;
+border-radius: 8px;
+border: none;
+margin-left: 10px;
+cursor: pointer;
+}
+.button.value.SQRT
+{
+background-color: #032100;
+height: 35px;
+width: 80px;
+}
+.button.black
+{
+color: white;
+background-color: black;
+border-bottom: 2px solid #889999;
+}
+.button.silver
+{
+color: white;
+background-color: #64749549;
+border-bottom: 4px solid black;
+
+}
+.button.red
+{
+color: white;
+background-color: red;
+border-bottom: 2px solid black;
+
+}
+
+
+
+p
+{
+line-height: 6px;
+}
+.span.inputscr
+{
+size: 20px;
+}
+
+input:hover
+{
+background-color: #3e8e41
+}
+input:active
+{
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+.animatespan {
+display: inline-block;
+position: relative;
+margin-top:8%;
+margin-left: 40%;
+/* align-items: center; */
+text-align: center;
+font-size: 72px;
+/* font-size: 72px; */
+/* background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}

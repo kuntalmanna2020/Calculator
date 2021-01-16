@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientific Calculator</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript">
+	function changesign(input)
+	{
+		if (calculator.display.value.substring(0,1)=="-")
+		 {
+		 	calculator.display.value=calculator.display.value.substring(1,calculator.display.value.length)
+		 }
+		 else
+		 {
+		 	calculator.display.value="-"+calculator.display.value
+		 }
+	}
+</script>
+</head>
+<body>
+	<!--------<div id="calculator" role="application">
+	!!-- Screen --
+	<div class="top">
+		<div class="screen" aria-labelledby="displayScreen"></div>
+	</div>
+	
+	<div class="keys" aria-labelledby="inputKeys">
+		!!- operators and other keys --
+		<span tabindex="0">7</span>
+		<span tabindex="0">8</span>
+		<span tabindex="0">9</span>
+		<span tabindex="0" class="operator">+</span>
+		<span tabindex="0">4</span>
+		<span tabindex="0">5</span>
+		<span tabindex="0">6</span>
+		<span tabindex="0" class="operator">-</span>
+		<span tabindex="0">1</span>
+		<span tabindex="0">2</span>
+		<span tabindex="0">3</span>
+  	<span tabindex="0" class="operator">x</span>
+    <span tabindex="0" class="clear">C</span>
+		<span tabindex="0">0</span>
+		<span tabindex="0">.</span>
+		<span tabindex="0" class="operator">÷</span>
+    <span tabindex="0" class="eval">=</span>
+    <span tabindex="0" class="operator">^</span>
+	</div>
+</div>---------->
+   <div id="container">
+   	<div class="screen"><form name="calculator"><input type="text" name="display" id="scn" size="20" readonly maxlength="50"></form></div>
+   	<div class="btns">
+   			<tbody>
+   				<p>
+   				 <tr>
+   					    <span class="inputscr"><input type="button" value="sin" class="button silver"
+   			onclick="calculator.display.value+=Math.sin(calculator.display.value)">
+   			<input type="button" value="cos" class="button silver"
+   			onclick="calculator.display.value+=Math.cos(calculator.display.value)">
+   			<input type="button" value="tan" class="button silver"
+   			onclick="calculator.display.value+=Math.tan(calculator.display.value)">
+   			<input type="button" value="(-)" class="button silver"
+   			onclick="changesign(calculator.display.value)">
+   			<input type="button" value="ABS" class="button silver"
+   			onclick="calculator.display.value+=Math.ABS(calculator.display.value)">
+         </span>
+   	</tr>
+   </p>
+
+           <p>
+   				<tr>
+   					<td>
+   						<!-----<div class="bfcfh012">-->
+   					 <input type="button" value="&radic;" class="button silver"
+   			         onclick="calculator.display.value+=Math.sqrt(calculator.display.value)">
+
+   			        <input type="button" value="SQR" class="button silver"onclick="calculator.display.value+=Math.sqr(calculator.display.value),2">
+
+   			            <input type="button" value="log" class="button silver"
+   			               onclick="calculator.display.value+=Math.log(calculator.display.value)">
+                        <input type ="button" value="x" class="button silver"
+   			                 onclick="calculator.display.value+=Math.pow(calculator.display.value)">
+
+   			            <input type="button" value="ln" class="button silver"
+   			             onclick="calculator.display.value+=Math.E(calculator.display.value)">
+
+                         
+                        <!------- </div>---->
+                       </td>
+   			     </tr>
+   			 </p>
+
+<p>
+   	<tr>
+   		<td>
+   			<input type="button" value="CLR" class="button silver"
+   			onclick="calculator.display.value=' '">
+
+   			<input type="button" value="(" class="button silver"
+   			onclick="calculator.display.value+='('">
+
+   			<input type="button" value=")" class="button silver"
+   			onclick="calculator.display.value+=')'">
+
+   			<input type="button" value="M+" class="button red"
+   			onclick="calculator.display.value+='M'">
+
+   			<input type="button" value="%" class="button red"
+   			onclick="calculator.display.value+='%'">
+   		</td>
+   	</tr>
+</p>
+
+
+
+   <p>
+   		<tr>
+   			<td>
+   			<input type="button" value="1" class="button silver"
+   			onclick="calculator.display.value+='1'">
+   			<input type="button" value="2" class="button silver"
+   			onclick="calculator.display.value+='2'">
+   			<input type="button" value="3" class="button silver"
+   			onclick="calculator.display.value+='3'">
+   			<input type="button" value="DEL" class="button silver"
+   			onclick="calculator.display.value=calculator.display.value=calculator.display.value.substring(0,calculator.display.value.length-1)">
+   			<input type="button" value="EXIT" class="button silver"
+   			onclick="calculator.display.value+='EXIT'">
+   			<!--------<input type="button" value="1" class="button silver">
+   			<input type="button" value="1" class="button silver">--->
+   		</td>
+   	</tr>
+   </p>
+
+
+
+   	<p>
+   		<tr>
+   			<td>
+   			<input type="button" value="4" class="button silver"
+   			onclick="calculator.display.value+='4'">
+   			<input type="button" value="5" class="button silver"
+   			onclick="calculator.display.value+='5'">
+   			<input type="button" value="6" class="button silver"
+   			onclick="calculator.display.value+='6'">
+   			<input type="button" value="+" class="button silver"
+   			onclick="calculator.display.value+='+'">
+   			<input type="button" value="-" class="button silver"
+   			onclick="calculator.display.value+='-'">
+
+   		</td>
+   	</tr>
+   </p>
+
+   	<p>
+   		<tr>
+   			<td>
+   			<input type="button" value="7" class="button silver"
+   			onclick="calculator.display.value+='7'">
+   			<input type="button" value="8" class="button silver"
+   			onclick="calculator.display.value+='8'">
+   			<input type="button" value="9" class="button silver"
+   			onclick="calculator.display.value+='9'">
+   			<input type="button" value="*" class="button silver"
+   			onclick="calculator.display.value+='*'">
+   			<input type="button" value="/" class="button silver"
+   			onclick="calculator.display.value+='/'">
+
+   		</td>
+   	</tr>
+   </p>
+   	<p>
+   		<tr>
+   			<td>
+   			<input type="button" value="0" class="button silver"
+   			onclick="calculator.display.value+='0'">
+   			<input type="button" value="." class="button silver"
+   			onclick="calculator.display.value+='.'">
+   			<input type="button" value="EXP" class="button silver"
+   			onclick="calculator.display.value+=Math.exp">
+   			<input type="button" value="Pi" class="button silver"
+   			onclick="calculator.display.value+=Math.PI">
+   			<input type="button" value="=" class="button silver"
+   			onclick="calculator.display.value=eval(calculator.display.value)">
+   		</td>
+   	</tr>
+   </p>
+   </tbody>
+
+	   </div>
+	   
+   </div>
+   <h1 class="animated pulse infinite animatespan">calculator</h1>
+   
+</body>
+</html>
